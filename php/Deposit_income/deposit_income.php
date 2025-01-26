@@ -1,5 +1,5 @@
 <?php
-    $tittle = "Вычисление дохода по вкладу";
+    $tittle = "Deposit income";
     require "blocks/header.php";
 ?>
 

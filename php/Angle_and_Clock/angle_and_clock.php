@@ -1,5 +1,5 @@
 <?php
-$tittle = "Working with a date";
+$tittle = "Angle and Clock";
 require "blocks/header.php";
 ?>
 
