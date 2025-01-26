@@ -1,0 +1,97 @@
+html{
+	left:0;
+}
+
+#container {
+	width: 80%;
+	margin: 50px auto;
+}
+#container ul { 
+	list-style-type: none; 
+}
+#container .buttons { 
+	margin-bottom: 20px; 
+}
+
+#container .list li { 
+	background-color: #F4F4F4;
+	width: 100%; 
+	height: 100px; 
+	margin-bottom: 10px;  
+}
+#container .list li .box{
+	width: 100%;
+	height:100px;
+	background-color: red;
+}
+
+#container .grid li {
+	background-color: #F4F4F4;
+    margin: 10px 2% 0 2%;
+    float: left;
+    width: 29.33%; 
+    height: 100px; 
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-between;
+    align-items: flex-start;
+    flex-direction: column; 
+}
+
+#container .grid .box_2 { 
+    justify-content:center;
+    align-items: center;
+}
+
+#container .grid .box_3{ 
+    justify-content:flex-end;
+    align-items: flex-end;
+}
+#container .grid .box_5{ 
+    justify-content:center;
+    align-items: center;
+}
+#container .grid .box_6{ 
+    justify-content:flex-end;
+    align-items: flex-end;
+}
+
+#container .grid li .box {
+	width: 60%;
+	height:100px;
+	background-color: red;
+}
+
+@media screen and (max-width: 1024px){
+#container .grid li{
+	width: 46%;
+}
+#container .grid .box_2 { 
+    justify-content:flex-end;
+    align-items: flex-end;
+}
+#container .grid .box_3{ 
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+#container .grid .box_4 {
+    justify-content:flex-end;
+    align-items: flex-end;
+}
+#container .grid .box_5{ 
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+} 
+
+@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
+#container .grid li{
+	width: 100%;
+}
+#container .grid li .box {
+	width: 100%;
+	height:100px;
+	background-color: red;
+}
+}

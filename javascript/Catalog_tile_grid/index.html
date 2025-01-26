@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Catalog</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.js"></script>
+	
+</head>
+<body>
+	<div id="container">
+		<div class="buttons">
+            <button class="grid">Cетка</button>
+            <button class="list">Список</button>
+        </div>
+            <ul class="list">
+               <li class = "box_1"><div class="box"></div></li>
+               <li class = "box_2"><div class="box"></div></li>
+               <li class = "box_3"><div class="box"></div></li>
+               <li class = "box_4"><div class="box"></div></li>
+               <li class = "box_5"><div class="box"></div></li>
+               <li class = "box_6"><div class="box"></div></li>
+               <li class = "box_7"><div class="box"></div></li>
+            </ul>
+    </div>	
+	<script type="text/javascript">
+		$('button').on('click',function(e) {
+      if ($(this).hasClass('grid')) {
+        $('#container ul').removeClass('list').addClass('grid');
+      } else if($(this).hasClass('list')) {
+        $('#container ul').removeClass('grid').addClass('list');
+      }
+    });
+  </script>
+</body>
+</html>
